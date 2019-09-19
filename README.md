@@ -8,3 +8,4 @@ JavaScript Design Patterns Learning
 - Module Pattern
 - Revealing Module Pattern
 - Singleton Pattern
+- Observer Pattern
