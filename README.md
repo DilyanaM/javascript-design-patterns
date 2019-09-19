@@ -6,5 +6,4 @@ JavaScript Design Patterns Learning
 
 - Constructor Pattern
 - Module Pattern
-
-
+- Revealing Module Pattern
