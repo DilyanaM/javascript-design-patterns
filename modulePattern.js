@@ -3,35 +3,35 @@
 // These are very useful when we want to hide certain parts of an object
 // and only expose an interface to the user of the module
 
-let collection = (function() {
+let fruitsCollection = (function() {
   // private members
-  let objects = [];
+  let fruits = [];
 
   // public members
   return {
-    addObject: function(object) {
-      objects.push(object);
+    addFruit: function(object) {
+      fruits.push(object);
     },
-    removeObject: function(object) {
-      let index = objects.indexOf(object);
+    removeFruit: function(object) {
+      let index = fruits.indexOf(object);
       if (index >= 0) {
-        objects.splice(index, 1);
+        fruits.splice(index, 1);
       }
     },
-    getObjects: function() {
-      return JSON.parse(JSON.stringify(objects));
+    getFruits: function() {
+      return JSON.parse(JSON.stringify(fruits));
     }
   };
 })();
 
-collection.addObject("Apple");
-collection.addObject("Mango");
-collection.addObject("Banana");
+fruitsCollection.addFruit("Apple");
+fruitsCollection.addFruit("Mango");
+fruitsCollection.addFruit("Banana");
 
 // prints ["Apple", "Mango", "Banana"]
-console.log(collection.getObjects());
+console.log(fruitsCollection.getFruits());
 
-collection.removeObject("Apple");
+fruitsCollection.removeFruit("Apple");
 
 // prints ["Mango", "Banana"]
-console.log(collection.getObjects());
+console.log(fruitsCollection.getFruits());

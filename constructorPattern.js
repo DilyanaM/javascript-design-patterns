@@ -3,11 +3,11 @@
 
 // create an object
 
-let instance = {};
+var instance = {};
 
-let instance = Object.create(Object.prototype);
+var instance = Object.create(Object.prototype);
 
-let instance = new Object();
+var instance = new Object();
 
 // add properties to the object
 
